@@ -1,29 +1,30 @@
-# 🛡️ Web Vulnerability Scanner
 
-> A lightweight Python tool to scan target IP/domain for open ports, fetch HTTP/HTTPS headers, detect common outdated server banners, and generate reports.
+# 🌿 Web Vulnerability Scanner
 
----
+A simple Python tool to:
+✅ Scan target domains/IPs for open ports  
+✅ Fetch HTTP/HTTPS headers  
+✅ Detect common outdated server banners  
+✅ Generate professional text, CSV & HTML reports  
 
-## ✨ **Features**
-- Port scanning using nmap
-- Fetch HTTP & HTTPS headers
-- Detect outdated server banners (e.g., old Apache/Nginx)
-- Generate text, CSV, and HTML reports
-- Use virtual environment (venv) for clean setup
+> 🛡️ Perfect for learning, college project, or quick security checks.
 
 ---
 
-## ⚙️ **Installation**
+## ✨ Features
+- ⚙️ Written in Python, easy to customize
+- 🐍 Uses virtual environment (`venv`) → clean & isolated
+- 📄 Generates HTML report styled with Bootstrap
+- 🖥 Interactive CLI script (`run.sh`) → asks target & ports
+- 📂 Reports auto‑saved in `reports/` folder
+
+---
+
+## 🚀 **How to set up (first time)**
+
 ```bash
-# Clone the repository
 git clone https://github.com/Aradhanasingh00/web-vuln-scanner.git
 cd web-vuln-scanner
-
-# Create virtual environment
 python3 -m venv venv
 source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-# Run scan (with root permission because nmap needs it)
-sudo -E venv/bin/python scanner.py --target scanme.nmap.org --ports 80,443
